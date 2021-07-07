@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*=====================
@@ -43,15 +43,20 @@ body{
     font-size: 50px;
     color: #fff;
     font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 50px;
 }
 .res-title-2{
-    font-size: 40px;
-    color: #fff;
-}
-.res-title-3{
     font-size: 35px;
     color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.res-title-3{
+    font-size: 30px;
+    color: #fff;
     font-weight: 500;
+    letter-spacing: 1px;
 }
 .res-slider-desc{
     color: #fff;
@@ -76,10 +81,36 @@ body{
 /* =======================
 |        media query     |
 ========================*/
+@media only screen and (max-width:1024px){
+    .res-title-3 {
+        font-size: 28px;
+    }
+    .res-title-1{
+        font-size: 45px;
+    }
+    .res-title-2{
+        font-size: 32px;
+    }
+    .res-slider-desc {
+        font-size: 20px;
+    }
+    .res-slider-btn{
+        padding: 10px 20px;
+        margin: 5px 10px;
+        font-size: 25px;
+    }
+    .res-slider-btn-wrapper{
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
 @media only screen and (max-width:768px){
     .res-title-1{
         font-size: 40px;
-        font-weight: 500;
     }
     .res-title-2{
         font-size: 30px;
@@ -96,25 +127,18 @@ body{
         padding: 10px 20px;
         margin: 5px 10px;
     }
-    .res-slider-btn-wrapper {
-        margin-top: 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
 }
 
 @media only screen and (max-width:425px){
     .res-title-1{
-        font-size: 40px;
-        font-weight: 500;
+        font-size: 35px;
     }
     .res-title-2{
-        font-size: 25px;
+        font-size: 20px;
+        font-weight: 500;
     }
     .res-title-3{
-        font-size: 20px;
+        font-size: 18px;
     }
     .res-slider-desc{
         font-size: 16px;
@@ -136,10 +160,11 @@ body{
 @media only screen and (max-width:320px){
     .res-title-1{
         font-size: 25px;
-        font-weight: 500;
+        font-weight: 600;
+        line-height: 40px;
     }
     .res-title-2{
-        font-size: 20px;
+        font-size: 18px;
     }
     .res-title-3{
         font-size: 16px;
@@ -150,8 +175,12 @@ body{
     }
     .res-slider-btn{
         font-size: 14px;
+        font-weight: 600;
     }
     .res-slider-btn-wrapper {
         margin-top: 10px;
+    }
+    .res-slider-content{
+        padding: 0 .6%;
     }
 }
