@@ -7,6 +7,7 @@
 }
 html{
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -26,7 +27,7 @@ body{
 	height: 550px;
 	background-size: cover;
 	background-position: center center;
-	position: relative;
+    cursor: pointer;
 }
 .res-slider-content {
     width: 100%;
@@ -35,7 +36,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.4);
     padding: 0 3%;
     text-align: center;
 }
@@ -45,23 +45,47 @@ body{
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 50px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2px 4px;
+    border-radius: 5px;
+
+    width: 60%;
+    /* margin-left: 20%; */
 }
 .res-title-2{
     font-size: 35px;
     color: #fff;
     letter-spacing: 1px;
     font-weight: 600;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2px 4px;
+    border-radius: 5px;
+
+    width: 40%;
+    /* margin-left: 30%; */
 }
 .res-title-3{
     font-size: 30px;
     color: #fff;
     font-weight: 500;
     letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2px 4px;
+    border-radius: 5px;
+
+    width: 50%;
+    /* margin-left: 25%; */
 }
 .res-slider-desc{
     color: #fff;
     font-size: 22px;
     font-weight: 500;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2px 4px;
+    border-radius: 5px;
+
+    width: 25%;
+    /* margin-left: 37.5%; */
 }
 .res-slider-btn-wrapper{
     margin-top: 15px;
@@ -82,17 +106,22 @@ body{
 |        media query     |
 ========================*/
 @media only screen and (max-width:1024px){
-    .res-title-3 {
-        font-size: 28px;
-    }
+    
     .res-title-1{
         font-size: 45px;
+        width: 80%;
     }
     .res-title-2{
         font-size: 32px;
+        width: 48%;
+    }
+    .res-title-3 {
+        font-size: 28px;
+        width: 58%;
     }
     .res-slider-desc {
         font-size: 20px;
+        width: 30%;
     }
     .res-slider-btn{
         padding: 10px 20px;
@@ -111,15 +140,19 @@ body{
 @media only screen and (max-width:768px){
     .res-title-1{
         font-size: 40px;
+        width: 90%;
     }
     .res-title-2{
         font-size: 30px;
+        width: 58%;
     }
     .res-title-3{
         font-size: 25px;
+        width: 70%;
     }
     .res-slider-desc{
         font-size: 18px;
+        width: 36%;
     }
     .res-slider-btn{
         font-size: 20px;
@@ -131,17 +164,22 @@ body{
 
 @media only screen and (max-width:425px){
     .res-title-1{
-        font-size: 35px;
+        font-size: 30px;
+        width: 90%;
+        line-height: 40px;
     }
     .res-title-2{
         font-size: 20px;
         font-weight: 500;
+        width: 70%;
     }
     .res-title-3{
         font-size: 18px;
+        width: 88%;
     }
     .res-slider-desc{
         font-size: 16px;
+        width: 56%;
     }
     .res-slider-btn{
         font-size: 18px;
@@ -159,19 +197,23 @@ body{
 
 @media only screen and (max-width:320px){
     .res-title-1{
-        font-size: 25px;
+        font-size: 23px;
         font-weight: 600;
-        line-height: 40px;
+        line-height: 30px;
+        width: 95%;
     }
     .res-title-2{
         font-size: 18px;
+        width: 95%;
     }
     .res-title-3{
-        font-size: 16px;
+        font-size: 14px;
+        width: 95%;
     }
     .res-slider-desc{
         font-size: 14px;
         letter-spacing: .9px;
+        width: 95%;
     }
     .res-slider-btn{
         font-size: 14px;
@@ -183,4 +225,11 @@ body{
     .res-slider-content{
         padding: 0 .6%;
     }
+}
+
+/* ========================================== */
+
+section.post {
+    margin-top: 106px;
+    padding: 0 4%;
 }
